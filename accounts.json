@@ -1,0 +1,14 @@
+{
+  "accounts": [
+    {
+      "id": "9c881632-1286-4cc2-8a22-fd927cf57891",
+      "name": "Lulão",
+      "balance": 13
+    },
+    {
+      "id": "3ff73078-05e0-4737-b293-e7a4fdebecd6",
+      "name": "Ricardo",
+      "balance": 13
+    }
+  ]
+}
