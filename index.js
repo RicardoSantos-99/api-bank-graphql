@@ -5,6 +5,7 @@ import accountsRouter from "./routes/account.routes.js";
 import cors from "cors";
 import { buildSchema } from "graphql";
 import { graphqlHTTP } from "express-graphql";
+import AccountService from "./services/account.service.js"
 
 const {readFile, writeFile} = fs
 const {combine, timestamp, label, printf} = winston.format
@@ -29,24 +30,31 @@ global.LOGGER = winston.createLogger({
 
 const schema = buildSchema(`
     type Account {
-        id: Int
+        id: String
         name: String
         balance: Float
     }
     type Query {
         getAccounts: [Account]
-        getAccount(id: Int): Account
+        getAccount(id: String): Account
     }
 `)
+
+const root = {
+    getAccounts: () => AccountService.getAccount(),
+    getAccount: (args) => {
+        return AccountService.getAccountById(args.id)
+    }
+}
 
 const app = express()
 app.use(express.json());
 app.use(cors());
 app.use("/account", accountsRouter)
 
-app.use('graphql', graphqlHTTP({
+app.use('/graphql', graphqlHTTP({
     schema,
-    rootValue: null,
+    rootValue: root,
     graphiql: true
 }))
 

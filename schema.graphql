@@ -1,0 +1,16 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+    query: Query
+}
+
+type Account {
+    balance: Float
+    id: String
+    name: String
+}
+
+type Query {
+    getAccount(id: String): Account
+    getAccounts: [Account]
+}
