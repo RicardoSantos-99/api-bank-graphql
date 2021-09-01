@@ -1,39 +1,24 @@
 {
   "accounts": [
     {
-      "id": "9c881632-1286-4cc2-8a22-fd927cf57891",
-      "name": "Lulão",
-      "balance": 13
-    },
-    {
-      "id": "1c881632-1286-4cc2-8a22-fd927cf57891",
-      "name": "Zika",
-      "balance": 2
-    },
-    {
-      "id": "2c881632-1286-4cc2-8a22-fd927cf57891",
-      "name": "John",
-      "balance": 7
-    },
-    {
-      "id": "3c881632-1286-4cc2-8a22-fd927cf57891",
-      "name": "Keep",
-      "balance": 5
-    },
-    {
-      "id": "3ff73078-05e0-4737-b293-e7a4fdebecd6",
+      "id": "8ea47988-6171-4f0b-8367-fde221dbe453",
       "name": "Ricardo",
-      "balance": 13
+      "balance": 22
     },
     {
-      "id": "55137b3b-ee65-42c7-996b-765447164c70",
-      "name": "Rica",
-      "balance": 10
+      "id": "1a945fb1-28f9-4ec5-9df5-83b59e359e38",
+      "name": "Ricardo",
+      "balance": 22
     },
     {
-      "id": "31ecbb4f-4570-4342-b2dd-8a4ac5c59945",
-      "name": "ZZika",
-      "balance": 10
+      "id": "5d5ad121-01dd-4c32-987e-020d6fc184be",
+      "name": "Ricardo",
+      "balance": 22
+    },
+    {
+      "id": "866cac98-ded1-44eb-9f9c-96d66044ec15",
+      "name": "sdads",
+      "balance": 22
     }
   ]
 }

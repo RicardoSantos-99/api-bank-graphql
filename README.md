@@ -10,3 +10,5 @@
 - `Uuid`
 - `Cors`
 - `Winston`
+- `GraphQL`
+- `Express-graphql`
